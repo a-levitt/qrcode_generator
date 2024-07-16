@@ -1,8 +1,10 @@
 import inquirer from 'inquirer';
 import qr from 'qr-image';
+import fs from 'fs';
 
-let qr_svg = qr.image('I love QR!', { type: 'svg' });
-
+// let qr_svg = qr.image('I love QR!', { type: 'svg' });
+// qr_svg.pipe(fs.createWriteStream('i_love_qr.svg'));
+// let svg_string = qr.imageSync('I love QR!', { type: 'svg' });
 
 // Input - {type: 'input'}
 inquirer
