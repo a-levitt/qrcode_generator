@@ -11,6 +11,11 @@ inquirer
     const url = answers.URL;
     let qr_img = qr.image( url, { type: 'png' });
     qr_img.pipe(fs.createWriteStream('QRcodes/yourQR.png'));
+
+    fs.writeFile("QRcodes/qr_text.txt", url, (err) => {
+        if (err) throw err;
+        console.log("Your QR-code successfully created in QRcodes directory!");
+    });
   })
   .catch((error) => {
     if (error.isTtyError) {
