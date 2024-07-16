@@ -8,11 +8,12 @@ import fs from 'fs';
 
 // Input - {type: 'input'}
 inquirer
-  .prompt([
-    /* Pass your questions in here */
-  ])
+  .prompt([{
+    message: "Type in a URL: ", 
+     name: "URL"
+  }])
   .then((answers) => {
-    // Use user feedback for... whatever!!
+    console.log(answers);
   })
   .catch((error) => {
     if (error.isTtyError) {
