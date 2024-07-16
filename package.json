@@ -1,0 +1,23 @@
+{
+  "name": "qrcode_generator",
+  "version": "1.0.0",
+  "description": "QR-code generator in node.js using esm",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/a-levitt/qrcode_generator.git"
+  },
+  "author": "alevitt",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/a-levitt/qrcode_generator/issues"
+  },
+  "homepage": "https://github.com/a-levitt/qrcode_generator#readme",
+  "dependencies": {
+    "inquirer": "^10.0.1",
+    "qr-image": "^3.2.0"
+  }
+}
